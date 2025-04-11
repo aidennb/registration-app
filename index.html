@@ -1,0 +1,33 @@
+<!-- Tells the browser this is a HTML5 document -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Character encoding to UTF-8 so all characters are displayed correctly. -->
+    <meta charset="UTF-8" />
+    <!-- Ensures the website scales properly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Title of the page -->
+    <title>Registration App</title>
+    <!-- Loads the Javascript file -->
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <!-- Main heading of the web page -->
+    <h1>User Registration</h1>
+
+    <!-- Form for user input -->
+    <form id="userForm">
+      <!-- Text input for the user's name (required), DOB, phone #, and email address -->
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="date" id="dob" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="email" id="email" placeholder="Email" required />
+
+      <!-- Submit button for the form -->
+      <button type="submit">Register</button>
+    </form>
+  
+    <!-- Unordered list to display the registered users -->
+    <ul id="userList"></ul>
+  </body>
+  </html>
